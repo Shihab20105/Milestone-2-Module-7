@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-7-7.6 | Animation </title>
+    <style>
+        @keyframes sliding {
+            /* from{
+                background-color: limegreen;
+                left: 0;
+            }
+            to{
+                background-color: magenta;
+                /* left: 300px; */
+                /* left: 200px; */
+            /* } */
+            0%{
+                /* background-color: limegreen; */
+                background-color: yellow;
+                left: 0;
+                top: 0;
+                /* transform: scale(0.5); */
+            }
+            /* 50%{
+                top: 200px;
+            } */
+            25%{
+                /* top: 200px; */
+                top: 225px;
+                background-color: red;
+                transform: scale(0.5);
+            }
+            50%{
+                top: 0px;
+                background-color: yellow;
+                transform: scale(1);
+            }
+            75%{
+                /* top: 200px; */
+                top: 225px;
+                background-color: red;
+                transform: scale(0.5);
+            }
+            100%{
+                /* background-color: magenta; */
+                background-color: yellow;
+                /* left: 300px; */
+                /* left: 200px; */
+                /* left: 400px; */
+                left: 600px;
+                top: 0;
+            }
+            
+        }
+        .stage{
+            /* width: 500px; */
+            width: 700px;
+            height: 300px;
+            background-color: lightskyblue;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: limegreen;
+            border-radius: 50%;
+            position: relative;
+            animation: sliding 2s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+        }
+    </style>
+    <span>Milestone-2-Module-7-7.6:</span>
+</head>
+<body>
+    <h1>Lets Explore Animation.</h1>
+    <div class="stage">
+        <div class="ball">
+
+        </div>
+    </div>
+    <h4>(Optional) CSS Animation and Bounce Effect with balls.</h4>
+    
+</body>
+</html>
