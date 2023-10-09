@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-7-7.5 | Cricket </title>
+    <style>
+        .field:hover .bat{
+            /* transform: rotate(60deg); */
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+        .bat{
+            transition: transform 0.2s ease-in;
+        }
+        .field{
+            border: solid;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 25px;
+            position: relative;
+            left: 512px;
+            transition: transform 1s ease-out 0.3s;
+        }
+        /* .ball:hover{
+            transform: translate(600px);
+        } */
+        .field:hover .ball{
+            /* transform: translate(800px, 100px); */
+            transform: translate(800px, -100px);
+        }
+    </style>
+    <span>Milestone-2-Module-7-7.5:</span>
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="images/bat.png" alt="">
+        <div class="ball"></div>
+    </div>
+    <h4>Cricket Match animation using transition and transform.</h4>
+    
+</body>
+</html>
